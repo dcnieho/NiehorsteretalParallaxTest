@@ -1,0 +1,279 @@
+{
+  "individual_markers": [
+    {
+      "__marker.Marker__": {
+        "id": 191,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 190,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 201,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 200,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 210,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 211,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 212,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    },
+    {
+      "__marker.Marker__": {
+        "id": 213,
+        "aruco_dict": "DICT_4X4_250",
+        "detect_only": true
+      }
+    }
+  ],
+  "coding_setup": [
+    {
+      "event_type": "Sync ET Data",
+      "name": "Sync ET Data",
+      "description": "Eye tracker synchronization episode",
+      "hotkey": "e",
+      "auto_code": {
+        "start_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 190,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 191,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ],
+        "end_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 191,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 190,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ]
+      },
+      "sync_setup": {
+        "get_cam_movement_method": "function",
+        "get_cam_movement_function": {
+          "parameters": {
+            "low": [
+              170,
+              200,
+              170
+            ],
+            "high": [
+              27,
+              255,
+              255
+            ],
+            "edge_cut_fac": 9
+          },
+          "module_or_file": "gazeMapper.utils.color_blob_localizer",
+          "function": "detect_blob_HSV"
+        }
+      }
+    },
+    {
+      "event_type": "Validate",
+      "name": "Dynamic validation (validate)",
+      "description": "Dynamic validation setup for validate",
+      "planes": {
+        "builtin.set": [
+          "validate"
+        ]
+      },
+      "auto_code": {
+        "start_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 200,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 201,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ],
+        "end_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 201,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 200,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ]
+      },
+      "validation_setup": {}
+    },
+    {
+      "event_type": "Validate",
+      "name": "Dynamic validation (parallax_30)",
+      "description": "Dynamic validation setup for parallax_30",
+      "planes": {
+        "builtin.set": [
+          "parallax_30"
+        ]
+      },
+      "auto_code": {
+        "start_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 210,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 211,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ],
+        "end_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 211,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 210,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ]
+      },
+      "validation_setup": {
+        "dynamic_split_consecutive": true
+      }
+    },
+    {
+      "event_type": "Validate",
+      "name": "Dynamic validation (parallax_200)",
+      "description": "Dynamic validation setup for parallax_200",
+      "planes": {
+        "builtin.set": [
+          "parallax_200"
+        ]
+      },
+      "auto_code": {
+        "start_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 212,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 213,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ],
+        "end_markers": [
+          {
+            "__config.MarkerID__": {
+              "m_id": 213,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          },
+          {
+            "__config.MarkerID__": {
+              "m_id": 212,
+              "aruco_dict": "DICT_4X4_250"
+            }
+          }
+        ]
+      },
+      "validation_setup": {
+        "dynamic_split_consecutive": true
+      }
+    },
+    {
+      "name": "parallax_walk",
+      "event_type": "Trial",
+      "planes": {
+        "builtin.set": [
+          "parallax_walk"
+        ]
+      },
+      "description": "Parallax while walking",
+      "hotkey": "w",
+      "gaze_offset_setup": {
+        "parallax_walk": {
+          "which_targets": {
+            "builtin.set": [
+              1
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "mapped_video_make_which": {
+    "builtin.set": [
+      "et"
+    ]
+  },
+  "mapped_video_recording_colors": {
+    "et": {
+      "__config.RgbColor__": {
+        "r": 255,
+        "g": 127,
+        "b": 0
+      }
+    }
+  }
+}

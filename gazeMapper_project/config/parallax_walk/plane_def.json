@@ -1,0 +1,20 @@
+{
+  "type": "Target Plane 2D",
+  "marker_file": "markerPositions.csv",
+  "marker_size": 135.0,
+  "plane_size": {
+    "builtin.tuple": [
+      1189.0,
+      841.0
+    ]
+  },
+  "origin": {
+    "builtin.tuple": [
+      594.5,
+      420.5
+    ]
+  },
+  "unit": "mm",
+  "target_file": "targetPositions.csv",
+  "aruco_dict": "DICT_4X4_250"
+}
