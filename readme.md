@@ -13,7 +13,7 @@ When using the contents of this repository in your work, please cite Niehorster 
 # Acknowledgements
 The authors gratefully acknowledge the Lund University Humanities Lab.
 
-![Logo](https://raw.githubusercontent.com/dcnieho/gazeMapper/master/.github/images/SEL_LOGO_color_black.png?raw=true)
+![Logo](https://raw.githubusercontent.com/dcnieho/NiehorsteretalParallaxTest/master/.github/images/SEL_LOGO_color_black.png?raw=true)
 
 This work is supported by EssilorLuxottica through the Smart Eyewear Lab, a Joint Research Center between EssilorLuxottica and Politecnico di Milano.
 
