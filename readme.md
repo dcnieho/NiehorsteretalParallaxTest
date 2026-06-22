@@ -10,6 +10,10 @@ When using the contents of this repository in your work, please cite Niehorster 
 - `stimulus`: Code implementing the procedure for the experiment, which includes presenting the visual stimuli for validation and the sitting task
 - `parallax_model.m`: MATLAB code implementing the parallax model. Generates Figures 1B and 1C in the paper.
 
+## How to use
+1. The code provided in the file `parallax_model.m` can be used to gain general insight into the parallex error expected for a P-CR eye tracker that is calibrated to a single plane at a specific distance. As such, it can be used to gain some insight into the parallax error one may expect for a given set of viewing distances. An important caveat however is that most modern wearable eye trackers use more complicated gaze estimation methods that may produce different parallax error profiles than this simple model would predict. We therefore recommend the interested researcher to instead:
+2. Assess parallax error in their eye tracker for their experimental setup (e.g. set of viewing distances) themselves. This would consist of printing the poster in the `poster_walking`, hanging it up, and executing the walking task described in the paper, or running the code in the `stimulus` folder and recording gaze data while a participant views this stimulus from the indicated viewing distances, or both. Analysis of the recorded data is then done by first processing the recordings with [gazeMapper](https://github.com/dcnieho/gazeMapper) using the configuration provided in the folder `gazeMapper_project`, followed by further analysis using the MATLAB scripts in the folder `analysis`.
+
 # Acknowledgements
 The authors gratefully acknowledge the Lund University Humanities Lab.
 
